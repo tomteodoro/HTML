@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Site</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
+    header, section { margin-bottom: 40px; }
+    nav ul { list-style-type: none; background: #004080; padding: 10px; }
+    nav ul li { display: inline; margin: 0 15px; }
+    nav ul li a { color: white; text-decoration: none; }
+    table { border-collapse: collapse; width: 80%; margin: 20px 0; }
+    table, th, td { border: 1px solid #444; }
+    th, td { padding: 10px; text-align: center; }
+    form { background: #eef; padding: 20px; border-radius: 10px; width: 50%; }
+    input, select, textarea { margin: 8px 0; padding: 8px; width: 95%; }
+    button { background: #004080; color: white; padding: 10px; border: none; cursor: pointer; }
+    button:hover { background: #0066cc; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Site</h1>
+    <!-- Grupo 1: Menu -->
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#horarios">Horários</a></li>
+        <li><a href="#inscricao">Inscreva-se</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Grupo 1: Listas -->
+  <section id="sobre">
+    <h2>Etapas para se inscrever</h2>
+    <ol>
+      <li>Preencher formulário online</li>
+      <li>Enviar documentação</li>
+      <li>Confirmar pagamento</li>
+    </ol>
+
+    <h2>Glossário</h2>
+    <dl>
+      <dt>TOEFL</dt><dd>Exame de proficiência em inglês</dd>
+      <dt>DELE</dt><dd>Diploma de Espanhol como Língua Estrangeira</dd>
+    </dl>
+  </section>
+
+  <!-- Grupo 2: Tabelas -->
+  <section id="horarios">
+    <h2>Horários e Preços</h2>
+    <table>
+      <tr>
+        <th>Idioma</th>
+        <th>Horário</th>
+        <th>Preço Mensal</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Inglês</td>
+        <td>Manhã</td>
+        <td>R$ 250</td>
+      </tr>
+      <tr>
+        <td>Noite</td>
+        <td>R$ 300</td>
+      </tr>
+      <tr>
+        <td>Espanhol</td>
+        <td>Tarde</td>
+        <td>R$ 220</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Grupo 3: Formulários -->
+  <section id="inscricao">
+    <h2>Formulário de Inscrição</h2>
+    <form action="#" method="post">
+      <label>Nome:</label>
+      <input type="text" name="nome" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+      <label>Telefone:</label>
+      <input type="tel" name="telefone" required pattern="^\(\d{2}\)\s?\d{4,5}-\d{4}$" placeholder="(99) 99999-9999">
+
+      <label>Selecione o Idioma:</label>
+      <select name="curso">
+        <option>Inglês</option>
+        <option>Espanhol</option>
+        <option>Francês</option>
+      </select>
+
+      <label>Modalidade:</label><br>
+      <input type="radio" name="turno" value="manha">Manhã
+      <input type="radio" name="turno" value="noite">Noite
+
+      <label>Interesses:</label><br>
+      <input type="checkbox" name="interesse" value="conversacao">Conversação
+      <input type="checkbox" name="interesse" value="gramatica">Gramática
+      
+      <label>Enviar documento:</label>
+      <input type="file" name="documento">
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </form>
+  </section>
+</body>
+</html>
