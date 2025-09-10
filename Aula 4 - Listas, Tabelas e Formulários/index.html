@@ -6,10 +6,10 @@
     <meta name="description" content="Aula 4 - Listas, Tabelas e Formulários">
     <title>Aula 4 - Listas, Tabelas e Formulários</title>
     <style>
-        table, th, td {
-            border: 10px solid black;
-            background-color: lightsteelblue;
+        table, th, td{
+            border: 1px solid black;
             border-collapse: collapse;
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -34,30 +34,26 @@
         <hr>
         <section>
             <h2>Tabela</h2>
-            <table border="1" height="200" width="300" >
+            <table border="1" height="100" width="300" cellpadding="15" cellspacing="15">
             <tr>
                 <th colspan="2">Nome e Idade</th>
                 <!-- <th>Idade</th> -->
             </tr>
             <tr valign="top">
-                <td>Ana</td>
+                <td rowspan="2">Ana</td>
                 <td>20</td>
             </tr>
+            <tr>
+                <!-- <td>Antonio</td> -->
+                <td>22</td>
+            </tr>
             <tr valign="middle">
-                <td>João</td>
-                <td>30</td>
+                <td>Beatriz</td>
+                <td>19</td>
             </tr>
             <tr valign="bottom">
-                <td>Maria</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <table border="1">
-                    <tr>
-                        <td>subitem 1</td>
-                        <td>subitem 2</td>
-                    </tr>
-                </table>
+                <td>José</td>
+                <td valign="bottom">19</td>
             </tr>
             </table>
         </section>
