@@ -1,0 +1,25 @@
+ul {
+    list-style: none;
+    padding: 0;
+    width: 200px;
+    background-color: #444; 
+}
+a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+a:hover {
+    background-color: #111;
+    color: red;
+    text-decoration: underline;
+}
