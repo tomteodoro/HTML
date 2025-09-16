@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box Model</title>
+<style>
+    div {
+        margin: 20px;
+        border: 3px solid blue;
+        padding: 15px;
+        width: 200px;
+        height: 200px;
+        background-color: lightgray;
+        /* box-sizing: border-box; Inclui padding e border na largura e altura totais */
+        /* box-sizing: content-box; Padrão, largura e altura incluem apenas o conteúdo */
+    }
+    a {
+        border-width: 5px;
+        border-style: solid;
+        border-color: red;
+    }
+    .content-box {
+        background-color: cyan;
+        height: 50px;
+        width: 300px;
+        padding: 25px;
+        border: 5px solid red;
+        box-sizing: content-box; /* Soma width + padding + border */
+    }
+    .border-box {
+        background-color: grey;
+        height: 50px;
+        width: 300px;
+        padding: 25px;
+        border: 5px solid red;
+        box-sizing: border-box;
+    }
+</style>
+</head>
+<body>
+    <div>
+    Conteúdo do Box
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="#"> Eos alias necessitatibus labore</a>, quibusdam maxime nisi nihil iure ipsa voluptas officiis minus a voluptates nemo? Voluptatibus fugit ab eaque nam quam.</p>
+    <hr>
+    <div class="content-box">Eu sou content-box (padrão)</div>
+    <div class="border-box">Eu sou border-box</div>
+</body>
+</html>
