@@ -16,3 +16,74 @@ h2 {
   color: white;
   text-align: center;
 }
+
+/* ativação do flex para todos os containers */
+/* container flex e itens flex */
+.container-flex {
+  display: flex;
+  background-color: purple;
+  color: white;
+  gap: 10px; /* Espaçamento entre os itens
+                (sempre usado no container pai) */
+}
+.item-flex {
+  background-color: orange;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 2. Flex Direction */
+.direcao-linha {
+  flex-direction: row; /* padrão */
+}
+.direcao-coluna {
+  flex-direction: column;
+}
+
+/* 3. flex-wrap - quebra de linha */
+.wrap {
+  flex-wrap: wrap; /* permite quebra de linha */
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+/* 4. justify-content - alinhamento horizontal */
+.justificar-inicio {
+  justify-content: start; /* padrão */
+}
+.justificar-fim {
+  justify-content: end;
+}
+.justificar-centro {
+  justify-content: center;
+}
+.justificar-space-between {
+  justify-content: space-between;
+}
+.justificar-space-around {
+  justify-content: space-around;
+}
+.justificar-space-evenly {
+  justify-content: space-evenly;
+}
+
+/* 5. align-items - alinhamento vertical */
+.alinhar-items .container-flex{
+  height: 300px;
+}
+.alinhar-stretch {
+  align-items: stretch; /* padrão */
+}
+.alinhar-inicio {
+  align-items: start;
+}
+.alinhar-fim {
+  align-items: end;
+}
+.alinhar-centro {
+  align-items: center;
+}
+.alinhar-baseline {
+  align-items: baseline;
+}
