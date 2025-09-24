@@ -100,12 +100,12 @@ h2 {
   order: 3;
 }
 
-/* 7. Flexgrow */
+/* 7. Flex Grow - Crescimento dos Itens */
 .exemplo-grow .item-flex {
   flex-basis: 100px;
 }
 .crescer1 {
-  flex-grow: 1;
+  flex-grow: 1; 
 }
 .crescer2 {
   flex-grow: 2;
