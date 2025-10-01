@@ -1,0 +1,58 @@
+button {
+    background-color: blue;
+    color: white;
+    transition: background 1s ease;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: red;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+@keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }    
+}
+
+#div1 {
+    background: linear-gradient(to right, red, yellow);
+    height: 20px;
+    width: 100%;
+}
+#div2 {
+    background: radial-gradient(circle, blue, white);
+    height: 20px;
+    width: 100%;
+}
+
+div {
+    animation: piscar 2s infinite;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    text-align: center;
+    color: white;
+}
+div:hover {
+    transform: translate(20px, 20px);
+}
+
+img:hover {
+    transform: rotate(360deg);
+    transition: transform 5s;
+}
+
+img {
+    opacity: 0.4;
+}
+
+img:hover {
+    animation: infinito 1s linear infinite;
+}
+@keyframes infinito {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }   
+}
